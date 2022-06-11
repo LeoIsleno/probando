@@ -19,10 +19,6 @@ public class despegarMainPage {
 		  //initElements(driver, this);
 	  }
 	  
-	  public boolean buttonAlojamientos() {
-		  return this.buttonAlojamientos.isDisplayed();
-	  }
-	  
 	  public despegarAlojamientosPage goToAlojamientos() {
 		  buttonAlojamientos.click();
 		  return new despegarAlojamientosPage(this.driver);
