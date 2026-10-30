@@ -1064,6 +1064,20 @@ class OpenStreetMap(DiscoveryProvider):
         "attorney": ['office=lawyer'],
         "contractor": ['craft=builder', 'office=construction_company'],
         "landscap": ['craft=gardener', 'shop=garden_centre'],
+        # --- Agregado local (no viene de upstream) ---
+        # Locales de celulares en Argentina. Los terminos del ICP estan en
+        # español, y el match es por substring sobre el termino en minusculas,
+        # asi que los needles mas especificos van ANTES del generico
+        # "celular": el primero que matchea gana.
+        #   shop=mobile_phone        -> venta de celulares y accesorios
+        #   craft=electronics_repair -> servicio tecnico / reparacion
+        "servicio técnico de celular": ['craft=electronics_repair', 'shop=mobile_phone'],
+        "reparación de celular": ['craft=electronics_repair', 'shop=mobile_phone'],
+        "venta de celular": ['shop=mobile_phone'],
+        "accesorios para celular": ['shop=mobile_phone'],
+        "celular": ['shop=mobile_phone', 'craft=electronics_repair'],
+        "mobile phone": ['shop=mobile_phone', 'craft=electronics_repair'],
+        "phone repair": ['craft=electronics_repair', 'shop=mobile_phone'],
     }
 
     def _tags(self, term: str) -> list[str]:
