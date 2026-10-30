@@ -47,9 +47,11 @@ icp:
   company_size: "1-15"
   geography:
     - "Córdoba, Argentina"
-    - "Villa Carlos Paz, Córdoba, Argentina"
-    - "Río Cuarto, Córdoba, Argentina"
-    - "Villa María, Córdoba, Argentina"
+    # Interior: descomentar para la segunda corrida. Cada ciudad agrega
+    # 4 queries (una por rubro) al estimate.
+    # - "Villa Carlos Paz, Córdoba, Argentina"
+    # - "Río Cuarto, Córdoba, Argentina"
+    # - "Villa María, Córdoba, Argentina"
 
 channels:
   email:
