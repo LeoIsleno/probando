@@ -1,0 +1,5 @@
+# Salidas generadas por la prospeccion. Son datos de comercios reales
+# (nombre, telefono, rating) y este repo es publico, asi que no se suben.
+# Si alguna vez queres versionar un listado, agregalo con `git add -f`.
+harvey/prospectos.csv
+harvey/*.csv
