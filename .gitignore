@@ -3,3 +3,4 @@
 # Si alguna vez queres versionar un listado, agregalo con `git add -f`.
 harvey/prospectos.csv
 harvey/*.csv
+harvey/mensajes_*.md
